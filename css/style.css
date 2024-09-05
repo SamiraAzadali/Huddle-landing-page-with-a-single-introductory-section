@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(../images/bg-desktop.svg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapper header .image img{
+    padding: 20px;
+}
+
+.wrapper .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper .container .row{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper .container .row .left{
+    width: 55%;
+    display: flex;
+    justify-self: flex-end;
+}
+
+.wrapper .container .row .left img{
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wrapper .container .row .right{
+    width: 35%;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+.wrapper .container .row .right h1{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.wrapper .container .row .right p{
+    font-family: 'Poppins';
+    font-weight: 400;
+    padding-bottom: 40px;
+}
+
+.wrapper .container .row .right .text-color{
+    color: white;
+}
+
+.wrapper .container .row .right button{
+    color: hsl(257, 40%, 49%);
+    font-family: 'Poppins';
+    font-size: 20px;
+    padding: 10px 50px;
+    border: 1px solid white;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.7s all;
+}
+
+.wrapper .container .row .right button:hover{
+    background-color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05, 1.05);
+}
+
+.wrapper footer .icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.wrapper footer .icons .icon{
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+@media (max-width:767px) {
+    .wrapper{
+        background-image: url(../images/bg-mobile.svg);
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+     .wrapper .container .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .wrapper .container .row .left{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+    }
+    
+    .wrapper .container .row .right{
+        width: 100%;
+        text-align: center;
+        padding: 30px 40px;
+    }
+
+    .wrapper .container .row .right h1{
+        font-size: 25px;
+    }
+
+    .wrapper .container .row .right button{
+        font-size: 15px;
+    }
+
+    .wrapper footer .icons{
+        display: flex;
+        justify-content: center;
+    }   
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .wrapper{
+        height: 100vh;
+    }   
+
+    .wrapper .container{
+        width: 100%;
+    }
+
+    .wrapper .container .row{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .wrapper .container .row .left{
+        width: 60%;
+        height: 100%;
+        display: flex;
+    }
+
+    .wrapper .container .row .left img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .wrapper .container .row .right{
+        width: 35%;
+    }
+
+    .wrapper .container .row .right h1{
+        font-size: 35px;
+    }
+
+    .wrapper .container .row .right button{
+        font-size: 17px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    .wrapper .container{
+        width: 100%;
+    }
+
+    .wrapper .container .row .left{
+        width: 57%;
+        height: 100%;
+    }
+
+    .wrapper .container .row .left img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
